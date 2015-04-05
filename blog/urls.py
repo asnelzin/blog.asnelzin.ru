@@ -4,8 +4,10 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('blog.apps.content.urls', namespace='content'))
 )
 
 if settings.DEBUG:

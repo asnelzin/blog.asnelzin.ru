@@ -70,6 +70,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
+
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
@@ -123,7 +125,7 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     # External apps
     # ...
-
+    'compressor',
 )
 
 # A sample logging configuration. The only tangible logging
