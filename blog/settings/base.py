@@ -126,6 +126,7 @@ INSTALLED_APPS = (
     # External apps
     # ...
     'compressor',
+    'endless_pagination',
 
     'blog.apps.content',
 )
