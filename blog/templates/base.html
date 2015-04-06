@@ -12,14 +12,35 @@
     {% block extra-meta %}{% endblock %}
 
     {% compress css %}
-        <link rel="stylesheet/less" type="text/css" media="all" href="{% static 'css/main.css' %}">
-    {% endcompres %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/main.css' %}">
+    {% endcompress %}
     {% block extra-css %}{% endblock %}
 </head>
 <body>
+    <header class="header">
+        <h1 class="logo">Блог Александра Нельзина</h1>
+        <nav class="nav">
+            <div class="nav_item">
+                <a class="nav_link" href="">Все посты</a>
+            </div>
+            <div class="nav_item">
+                <a class="nav_link" href="">Об авторе</a>
+            </div>
+        </nav>
+    </header>
     <div class="container">
         {% block content %}{% endblock %}
     </div>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_copyrights">
+                (c) Александр Нельзин, 2015
+            </div>
+            <div class="footer_info">
+                Работает на Django, живет на DigitalOcean
+            </div>
+        </div>
+    </footer>
 
     {% compress js %}
         <script src="{% static 'js/main.js' %}"></script>

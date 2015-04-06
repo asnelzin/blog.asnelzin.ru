@@ -126,6 +126,8 @@ INSTALLED_APPS = (
     # External apps
     # ...
     'compressor',
+
+    'blog.apps.content',
 )
 
 # A sample logging configuration. The only tangible logging
