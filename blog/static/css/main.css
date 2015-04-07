@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2rem .6rem 30px;
+    background: #f9f8f6;
+    color: #333;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 50rem;
+    font-family: "Georgia", serif;
+}
+
+a:link {
+    -webkit-tap-highlight-color: rgba(250,237,177,.25);
+}
+
+.header {
+    margin-bottom: 2.4rem;
+}
+
+.logo {
+    margin-bottom: .6rem;
+    display: block;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.nav {
+    display: block;
+    margin-bottom: .6rem;
+    margin-left: -.9rem;
+    margin-right: -.9rem;
+    text-align: center;
+}
+
+.nav_item {
+    display: inline-block;
+    margin-left: .9rem;
+    margin-right: .9rem;
+}
+
+.link, .link:link {
+    color: #71a2c0;
+}
+
+.link:visited {
+    color: #8f7cb6;
+}
+
+.blind_link, .blind_link:link, .blind_link:visited,
+.nav_link, .nav_link:link, .nav_link:visited {
+    color: #333;
+}
+
+.link:active, .link:focus, .link:hover,
+.blind_link:active, .blind_link:focus, .blind_link:hover,
+.nav_link:active, .nav_link:focus, .nav_link:hover {
+    color: #f5a131;
+}
+
+.link,
+.blind_link,
+.nav_link {
+    transition: border .1s ease-in-out,color .2s ease-in-out,background .2s ease-in-out;
+}
+
+.note {
+    margin-bottom: 3.6rem;
+    font-size: 1.2rem;
+}
+
+.note_title {
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.note_text {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.note_meta {
+    margin-bottom: 1.2rem;
+    font-size: .8rem;
+}
+
+.note_tags_tag {
+    margin-right: .8em;
+}
+
+.note_date {
+    color: rgba(0,0,0,.5);
+}
+
+.note_text p {
+    margin-bottom: 1.2rem;
+
+}
+
+.note_text h1, .note_text h2, .note_text h3,
+.note_text h4, .note_text h5 {
+    margin-top: 2.4rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.note_text h2 {
+    font-weight: 700;
+}
+
+.pages {
+    margin-bottom: 2.4rem;
+}
+
+.pages .link {
+    text-decoration: none;
+}
+
+.pages u {
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: .75rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+}
+
+.footer_container {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 .6rem;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer_copyrights {
+    flex: 1;
+}
+
+.footer_info {
+    flex: 1;
+    text-align: right;
+}
+
+::selection {
+    color: #333;
+    background: #faedb1;
+}
