@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load endless %}
+
+{% block content %}
+    <article class="note">
+        <h2 class="note_title">
+            {{ post.title }}
+        </h2>
+        <div class="note_text">
+            {{ post.body|safe }}
+        </div>
+        <div class="note_meta">
+            <span class="note_tags">
+                {% for tag in post.tags.all %}
+                    <a class="note_tags_tag link" href="">{{ tag.name }}</a>
+                {% endfor %}
+            </span>
+            <span class="note_date" title="{{ post.date }}">{{ post.date }}</span>
+        </div>
+    </article>
+{% endblock %}
