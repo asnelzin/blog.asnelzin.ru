@@ -6,7 +6,7 @@
     {% for post in object_list %}
         <article class="note">
             <h2 class="note_title">
-                <a class="blind_link" href="">{{ post.title }}</a>
+                <a class="blind_link" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </h2>
             <div class="note_text">
                 {{ post.body|safe }}

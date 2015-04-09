@@ -4,7 +4,7 @@
 <html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}Блог Александра Нельзина{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{% block meta-description %}{% endblock %}">
     <meta name="author" content="{% block meta-author %}{% endblock %}">
@@ -12,6 +12,7 @@
     {% block extra-meta %}{% endblock %}
 
     {% compress css %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/libs/highlight/darkula.css' %}"/>
         <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/main.css' %}">
     {% endcompress %}
     {% block extra-css %}{% endblock %}
@@ -21,7 +22,7 @@
         <h1 class="logo">Блог Александра Нельзина</h1>
         <nav class="nav">
             <div class="nav_item">
-                <a class="nav_link" href="">Все посты</a>
+                <a class="nav_link" href="{% url "content:main" %}">Все посты</a>
             </div>
             <div class="nav_item">
                 <a class="nav_link" href="">Об авторе</a>
@@ -43,9 +44,11 @@
     </footer>
 
     {% compress js %}
-        <script src="{% static "js/libs/jquery-2.1.1.min.js" %}"></script>
+        <script src="{% static 'js/libs/jquery-2.1.1.min.js' %}"></script>
+        <script src="{% static 'js/libs/highlight.min.js' %}"></script>
         <script src="{% static 'js/main.js' %}"></script>
     {% endcompress %}
+    <script>hljs.initHighlightingOnLoad();</script>
     {% block extra-js %}{% endblock %}
 </body>
 </html>
