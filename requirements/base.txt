@@ -3,3 +3,4 @@ Django==1.7.6
 django_compressor==1.4
 django-endless-pagination==2.0
 django-taggit==0.13
+Pillow==2.8.1

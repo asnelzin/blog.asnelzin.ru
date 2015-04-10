@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'taggit',
 
     'blog.apps.content',
+    'blog.apps.media',
 )
 
 # A sample logging configuration. The only tangible logging
