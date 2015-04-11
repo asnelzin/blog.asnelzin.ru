@@ -4,3 +4,5 @@
 !.gitkeep
 !.gitignore
 */settings/local.py
+
+files/*
