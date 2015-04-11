@@ -19,7 +19,9 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="logo">Блог Александра Нельзина</h1>
+        <h1 class="logo">
+            <a class="blind_link" href="{% url "content:main" %}">Блог Александра Нельзина</a>
+        </h1>
         <nav class="nav">
             <div class="nav_item">
                 <a class="nav_link" href="{% url "content:main" %}">Все посты</a>

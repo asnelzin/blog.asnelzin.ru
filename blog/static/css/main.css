@@ -38,6 +38,10 @@ a:link {
     text-align: center;
 }
 
+.logo .blind_link {
+    text-decoration: none;
+}
+
 .nav {
     display: block;
     margin-bottom: .6rem;
