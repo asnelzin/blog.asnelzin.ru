@@ -14,7 +14,9 @@
             <div class="note_meta">
                 <span class="note_tags">
                     {% for tag in post.tags.all %}
-                        <a class="note_tags_tag link" href="">{{ tag.name }}</a>
+                        <a class="note_tags_tag link" href="{% url "content:post_list_tag" tag.slug %}">
+                            {{ tag.name }}
+                        </a>
                     {% endfor %}
                 </span>
                 <span class="note_date" title="{{ post.date }}">{{ post.date }}</span>

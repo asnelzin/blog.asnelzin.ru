@@ -106,6 +106,13 @@ a:link {
     font-size: .8rem;
 }
 
+.marked {
+    margin: 0 -.5ex;
+    padding: .25ex .5ex;
+    border-radius: .3em;
+    background: rgba(252,230,90,.6)!important;
+}
+
 .note_tags_tag {
     margin-right: .8em;
 }
