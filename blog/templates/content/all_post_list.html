@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load endless %}
+
+{% block content %}
+    {% for year, posts in object_list.items %}
+        <h2 class="note_title">{{ year }}</h2>
+        <ul class="posts_list">
+            {% for post in posts %}
+                <li class="posts_list_item">
+                    <a class="link" href="{% url 'content:post_view' post.slug %}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock %}

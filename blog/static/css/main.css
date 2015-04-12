@@ -25,6 +25,10 @@ a:link {
     -webkit-tap-highlight-color: rgba(250,237,177,.25);
 }
 
+ul {
+    list-style: none;
+}
+
 .header {
     margin-bottom: 2.4rem;
 }
@@ -171,6 +175,14 @@ img {
 a img {
     border: none!important;
     background-image: none!important;
+}
+
+.posts_list {
+    margin-bottom: 2.4rem;
+}
+
+.posts_list_item {
+    margin-bottom: .3rem;
 }
 
 .pages {
