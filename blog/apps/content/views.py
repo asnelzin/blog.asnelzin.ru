@@ -8,7 +8,6 @@ from taggit.models import Tag
 from blog.apps.content.models import Post
 
 
-
 class PostList(ListView):
     model = Post
     template_name = 'index.html'

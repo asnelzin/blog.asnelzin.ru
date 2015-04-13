@@ -49,8 +49,17 @@
         <script src="{% static 'js/libs/jquery-2.1.1.min.js' %}"></script>
         <script src="{% static 'js/libs/highlight.min.js' %}"></script>
         <script src="{% static 'js/main.js' %}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     {% endcompress %}
-    <script>hljs.initHighlightingOnLoad();</script>
+
+
     {% block extra-js %}{% endblock %}
+
+    {% block counter %}
+        {% if not is_debug %}
+            {% include 'includes/_counters.html' %}
+        {% endif %}
+    {% endblock %}
+
 </body>
 </html>
