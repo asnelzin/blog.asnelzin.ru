@@ -10,28 +10,7 @@
     </h2>
     {% paginate 15 object_list %}
     {% for post in object_list %}
-        <article class="note">
-            <h2 class="note_title">
-                <a class="blind_link" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-            </h2>
-            <div class="note_text">
-                {{ post.body|safe }}
-            </div>
-            <div class="note_meta">
-                <span class="note_tags">
-                    {% for post_tag in post.tags.all %}
-                        {% if post_tag == tag %}
-                            <span class="note_tags_tag marked">{{ post_tag.name }}</span>
-                        {% else %}
-                            <a class="note_tags_tag link" href="{% url "content:post_list_tag" post_tag.slug %}">
-                                {{ post_tag.name }}
-                            </a>
-                        {% endif %}
-                    {% endfor %}
-                </span>
-                <span class="note_date" title="{{ post.date }}">{{ post.date }}</span>
-            </div>
-        </article>
+        {% include 'includes/_post.html' with post=post search_tag=tag is_title_link=True %}
     {% endfor %}
     {% get_pages %}
     <div class="pages">

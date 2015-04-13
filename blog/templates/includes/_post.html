@@ -12,9 +12,13 @@
     <div class="note_meta">
         <span class="note_tags">
             {% for tag in post.tags.all %}
-                <a class="note_tags_tag link" href="{% url "content:post_list_tag" tag.slug %}">
-                    {{ tag.name }}
-                </a>
+                {% if tag == search_tag %}
+                            <span class="note_tags_tag marked">{{ tag.name }}</span>
+                        {% else %}
+                            <a class="note_tags_tag link" href="{% url "content:post_list_tag" tag.slug %}">
+                                {{ tag.name }}
+                            </a>
+                {% endif %}
             {% endfor %}
         </span>
         <span class="note_date" title="{{ post.date }}">{{ post.date }}</span>
