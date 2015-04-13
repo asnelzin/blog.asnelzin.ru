@@ -4,24 +4,7 @@
 {% block content %}
     {% paginate 15 object_list %}
     {% for post in object_list %}
-        <article class="note">
-            <h2 class="note_title">
-                <a class="blind_link" href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-            </h2>
-            <div class="note_text">
-                {{ post.body|safe }}
-            </div>
-            <div class="note_meta">
-                <span class="note_tags">
-                    {% for tag in post.tags.all %}
-                        <a class="note_tags_tag link" href="{% url "content:post_list_tag" tag.slug %}">
-                            {{ tag.name }}
-                        </a>
-                    {% endfor %}
-                </span>
-                <span class="note_date" title="{{ post.date }}">{{ post.date }}</span>
-            </div>
-        </article>
+        {% include 'includes/_post.html' with post=post is_title_link=True %}
     {% endfor %}
     {% get_pages %}
     <div class="pages">
