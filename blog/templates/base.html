@@ -24,10 +24,10 @@
         </h1>
         <nav class="nav">
             <div class="nav_item">
-                <a class="nav_link" href="{% url "content:main" %}">Все посты</a>
+                <a class="nav_link" href="{% url "content:all_post_view" %}">Все посты</a>
             </div>
             <div class="nav_item">
-                <a class="nav_link" href="">Об авторе</a>
+                <a class="nav_link" href="{% url "content:about" %}">Об авторе</a>
             </div>
         </nav>
     </header>
