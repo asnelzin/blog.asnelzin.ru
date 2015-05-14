@@ -4,8 +4,8 @@ from django.shortcuts import get_object_or_404
 
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
-from taggit.models import Tag
-from blog.apps.content.models import Post
+
+from blog.apps.content.models import Post, PostTag
 
 
 class PostList(ListView):
@@ -23,7 +23,7 @@ class PostListTag(ListView):
     template_name = 'content/post_list_tag.html'
 
     def get_queryset(self):
-        self.tag = get_object_or_404(Tag, slug__iexact=self.kwargs['slug'])
+        self.tag = get_object_or_404(PostTag, slug__iexact=self.kwargs['slug'])
         return Post.objects.filter(tags__in=[self.tag])
 
     def get_context_data(self, **kwargs):
