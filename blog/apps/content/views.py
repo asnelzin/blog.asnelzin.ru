@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404
 
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
+from django.views.generic.edit import CreateView
 
 from blog.apps.content.models import Post, PostTag
 
@@ -43,3 +44,8 @@ class AllPostList(ListView):
             object_list[date.year] = Post.objects.filter(date__year=date.year)
         context['object_list'] = object_list
         return context
+
+
+class CreatePost(CreateView):
+    model = Post
+    template_name = 'content/create_post.html'
