@@ -7,6 +7,7 @@ from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
 
 from blog.apps.content.models import Post, PostTag
+from blog.apps.core.views import LoginRequiredMixin
 
 
 class PostList(ListView):
@@ -46,6 +47,6 @@ class AllPostList(ListView):
         return context
 
 
-class CreatePost(CreateView):
+class CreatePost(LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'content/create_post.html'

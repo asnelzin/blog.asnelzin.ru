@@ -12,6 +12,8 @@
     {% block extra-meta %}{% endblock %}
 
     {% compress css %}
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/libs/bootstrap/bootstrap.min.css' %}"/>
+        <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/libs/bootstrap/bootstrap-theme.min.css' %}"/>
         <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/libs/highlight/default.css' %}"/>
         <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/main.css' %}">
     {% endcompress %}
@@ -48,6 +50,7 @@
     {% compress js %}
         <script src="{% static 'js/libs/jquery-2.1.1.min.js' %}"></script>
         <script src="{% static 'js/libs/highlight.min.js' %}"></script>
+        <script src="{% static 'js/libs/bootstrap.min.js' %}"></script>
         <script src="{% static 'js/main.js' %}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     {% endcompress %}
