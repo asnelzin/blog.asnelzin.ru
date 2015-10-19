@@ -1,0 +1,680 @@
+[
+{
+    "fields": {
+        "name": "world",
+        "slug": "world"
+    },
+    "model": "taggit.tag",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "lorem",
+        "slug": "lorem"
+    },
+    "model": "taggit.tag",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "hello",
+        "slug": "hello"
+    },
+    "model": "taggit.tag",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "code",
+        "slug": "code"
+    },
+    "model": "taggit.tag",
+    "pk": 4
+},
+{
+    "fields": {
+        "name": "\u0434\u043d\u0435\u0432\u043d\u044f\u0448\u043a\u0430",
+        "slug": "dnevnyashka"
+    },
+    "model": "taggit.tag",
+    "pk": 5
+},
+{
+    "fields": {
+        "tag": 1,
+        "content_type": 7,
+        "object_id": 1
+    },
+    "model": "taggit.taggeditem",
+    "pk": 36
+},
+{
+    "fields": {
+        "tag": 2,
+        "content_type": 7,
+        "object_id": 1
+    },
+    "model": "taggit.taggeditem",
+    "pk": 37
+},
+{
+    "fields": {
+        "tag": 3,
+        "content_type": 7,
+        "object_id": 1
+    },
+    "model": "taggit.taggeditem",
+    "pk": 38
+},
+{
+    "fields": {
+        "tag": 4,
+        "content_type": 7,
+        "object_id": 1
+    },
+    "model": "taggit.taggeditem",
+    "pk": 39
+},
+{
+    "fields": {
+        "tag": 5,
+        "content_type": 7,
+        "object_id": 2
+    },
+    "model": "taggit.taggeditem",
+    "pk": 40
+},
+{
+    "fields": {
+        "name": "\u0441\u0442\u0430\u0440\u043e\u0435",
+        "slug": "staroe"
+    },
+    "model": "content.posttag",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "\u0434\u043d\u0435\u0432\u043d\u044f\u0448\u043a\u0430",
+        "slug": "dnevniashka"
+    },
+    "model": "content.posttag",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "test",
+        "slug": "test"
+    },
+    "model": "content.posttag",
+    "pk": 3
+},
+{
+    "fields": {
+        "tag": 1,
+        "content_type": 7,
+        "object_id": 2
+    },
+    "model": "content.posttaggeditem",
+    "pk": 1
+},
+{
+    "fields": {
+        "tag": 2,
+        "content_type": 7,
+        "object_id": 2
+    },
+    "model": "content.posttaggeditem",
+    "pk": 2
+},
+{
+    "fields": {
+        "tag": 3,
+        "content_type": 7,
+        "object_id": 3
+    },
+    "model": "content.posttaggeditem",
+    "pk": 3
+},
+{
+    "fields": {
+        "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, libero et pulvinar commodo, sapien magna eleifend tellus, nec lobortis risus mauris id leo. Morbi ac molestie elit. Nullam non nisl dolor. Sed consequat in nisl at sagittis. Nulla faucibus facilisis est, sit amet semper ante euismod at. Duis dignissim arcu vitae ultrices lacinia. Sed a aliquam sem, quis tincidunt lacus. Vivamus quis blandit sem, non tristique metus. Duis ac pretium elit. Donec in accumsan risus, tincidunt porttitor odio. In eu viverra urna. Nam sodales, sem sed vehicula efficitur, leo lectus pretium sem, id iaculis nibh mi faucibus mauris. Maecenas bibendum dolor at enim hendrerit ultricies.</p>\r\n\r\n<pre><code>#!/usr/bin/env bash\r\n\r\n# error \"\u0421\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435\"\r\nfunction error() {\r\n    osascript &lt;&lt;EOT\r\n        tell app \"System Events\"\r\n            display dialog \"$1\" buttons {\"OK\"} default button 1 with icon caution with title \"$(basename $0)\"\r\n            return  -- Suppress result\r\n        end tell\r\nEOT\r\n}\r\n\r\nerror \"Not enough cheese!\"</code></pre>\r\n\r\n<p>Morbi id nibh sapien. Praesent a porta lectus, ut luctus orci. Vivamus tincidunt eu est nec sollicitudin. Integer laoreet elit sit amet felis eleifend euismod. Aenean eu dui suscipit arcu consectetur dignissim. Suspendisse vulputate felis id ultricies lacinia. Morbi nibh eros, elementum in ullamcorper non, ultricies at lorem.</p>\r\n\r\n<p>Donec malesuada diam eu lorem congue, a fringilla odio tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non ornare diam, interdum volutpat risus. Maecenas et sem sit amet risus scelerisque rutrum. Nam ultricies lobortis porttitor. Mauris maximus ut urna sit amet euismod. Morbi quis nunc porttitor, consequat nibh et, pulvinar odio. Nulla euismod venenatis ipsum, fermentum interdum libero scelerisque mattis. Aliquam facilisis sodales elit quis interdum.</p>\r\n\r\n<p>Morbi porttitor non velit fermentum mattis. Fusce ultrices justo tellus, sed scelerisque nisi varius rhoncus. Sed commodo elit sed bibendum posuere. Curabitur vitae magna egestas, blandit ante quis, efficitur nisl. Ut nisl nunc, maximus non efficitur vel, convallis sodales nibh. Nunc scelerisque id libero nec vestibulum. In quis pulvinar neque. Nulla justo felis, consequat at scelerisque ac, rhoncus a tortor. Aenean a mollis nunc. Nunc venenatis risus at efficitur consequat. Praesent efficitur libero at tempus interdum. Etiam odio enim, finibus eget ipsum id, hendrerit feugiat tellus. Aliquam libero elit, scelerisque non purus at, porttitor interdum ipsum. Sed posuere vitae turpis at sollicitudin. Curabitur volutpat lacinia augue, in elementum neque semper sit amet.</p>\r\n\r\n<p>Donec lacinia varius odio quis dignissim. Etiam rutrum erat in mauris pharetra, et dictum arcu gravida. Vivamus at condimentum tortor. Etiam eget dolor mauris. Sed malesuada nibh ut convallis aliquam. Nullam dignissim, purus ac posuere accumsan, odio nulla congue dui, in imperdiet ipsum ipsum sit amet elit. Nulla lacinia tellus at purus euismod, vel aliquet mauris scelerisque. Suspendisse suscipit nunc non fringilla varius.</p>\r\n\r\n<p>Proin porttitor magna a odio semper blandit. Maecenas at risus vehicula, sodales ligula vel, iaculis odio. Aenean tempus urna eu diam condimentum porta. Praesent sagittis sapien et purus lacinia vulputate. Nam mollis tellus vitae dolor tempor vestibulum. Donec sagittis at odio at dictum. Donec auctor, lectus sit amet porttitor aliquet, nisi sem malesuada est, eu dictum ex est vitae libero. Donec sit amet aliquam lorem. Nullam interdum nulla efficitur, iaculis diam sed, rutrum diam. Ut rhoncus, quam at viverra pharetra, turpis diam laoreet felis, sit amet elementum risus mauris vel eros. Nullam tincidunt libero eu ante iaculis semper. Sed finibus fermentum vehicula. Curabitur eleifend arcu sit amet dui volutpat maximus.</p>",
+        "date": "2015-04-06",
+        "title": "Hello, World",
+        "slug": "1"
+    },
+    "model": "content.post",
+    "pk": 1
+},
+{
+    "fields": {
+        "body": "<p>\u0421\u043e\u0446\u0441\u0435\u0442\u0438 \u2014 \u044d\u0442\u043e \u043f\u0440\u043e \u043b\u044e\u0434\u0435\u0439, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043d\u0438\u043a\u0430\u043a \u043d\u0435 \u043c\u043e\u0433\u0443\u0442 \u0437\u0430\u0442\u043a\u043d\u0443\u0442\u044c\u0441\u044f \u0434\u0430\u0436\u0435 \u043d\u0430\u0435\u0434\u0438\u043d\u0435 \u0441 \u0441\u043e\u0431\u043e\u0439.</p>\n\n<p>\u0412 \u043f\u0440\u043e\u0442\u0438\u0432\u043e\u043f\u043e\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u044c \u044d\u0442\u043e\u043c\u0443 \u0434\u0436\u0430\u043d\u043a-\u0444\u0443\u0434\u0443 \u0434\u043b\u044f \u0433\u043b\u0430\u0437, \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u043e \u0441\u0435\u0433\u043e\u0434\u043d\u044f \u2014 \u044d\u0442\u043e \u043e\u0441\u0442\u0440\u043e\u0432 \u0442\u0438\u0448\u0438\u043d\u044b \u0438 \u0438\u0441\u0442\u0438\u043d\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043b\u0435\u0436\u0438\u0442 \u043c\u0435\u0436 \u043d\u0430\u043a\u0430\u0442\u044b\u0432\u0430\u044e\u0449\u0438\u0445 \u0432\u043e\u043b\u043d \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0431\u043b\u0435\u0432\u043e\u0442\u044b.</p>",
+        "date": "2015-04-15",
+        "title": "***",
+        "slug": "2"
+
+    },
+    "model": "content.post",
+    "pk": 2
+},
+{
+    "fields": {
+        "body": "qweqewqweqweqwe",
+        "date": "2015-04-15",
+        "title": "test draft",
+        "slug": "3"
+    },
+    "model": "content.post",
+    "pk": 3
+},
+{
+    "fields": {
+        "codename": "add_permission",
+        "name": "Can add permission",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 1
+},
+{
+    "fields": {
+        "codename": "change_permission",
+        "name": "Can change permission",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 2
+},
+{
+    "fields": {
+        "codename": "delete_permission",
+        "name": "Can delete permission",
+        "content_type": 1
+    },
+    "model": "auth.permission",
+    "pk": 3
+},
+{
+    "fields": {
+        "codename": "add_group",
+        "name": "Can add group",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 4
+},
+{
+    "fields": {
+        "codename": "change_group",
+        "name": "Can change group",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 5
+},
+{
+    "fields": {
+        "codename": "delete_group",
+        "name": "Can delete group",
+        "content_type": 2
+    },
+    "model": "auth.permission",
+    "pk": 6
+},
+{
+    "fields": {
+        "codename": "add_user",
+        "name": "Can add user",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 7
+},
+{
+    "fields": {
+        "codename": "change_user",
+        "name": "Can change user",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 8
+},
+{
+    "fields": {
+        "codename": "delete_user",
+        "name": "Can delete user",
+        "content_type": 3
+    },
+    "model": "auth.permission",
+    "pk": 9
+},
+{
+    "fields": {
+        "codename": "add_contenttype",
+        "name": "Can add content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 10
+},
+{
+    "fields": {
+        "codename": "change_contenttype",
+        "name": "Can change content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 11
+},
+{
+    "fields": {
+        "codename": "delete_contenttype",
+        "name": "Can delete content type",
+        "content_type": 4
+    },
+    "model": "auth.permission",
+    "pk": 12
+},
+{
+    "fields": {
+        "codename": "add_session",
+        "name": "Can add session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 13
+},
+{
+    "fields": {
+        "codename": "change_session",
+        "name": "Can change session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 14
+},
+{
+    "fields": {
+        "codename": "delete_session",
+        "name": "Can delete session",
+        "content_type": 5
+    },
+    "model": "auth.permission",
+    "pk": 15
+},
+{
+    "fields": {
+        "codename": "add_logentry",
+        "name": "Can add log entry",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 16
+},
+{
+    "fields": {
+        "codename": "change_logentry",
+        "name": "Can change log entry",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 17
+},
+{
+    "fields": {
+        "codename": "delete_logentry",
+        "name": "Can delete log entry",
+        "content_type": 6
+    },
+    "model": "auth.permission",
+    "pk": 18
+},
+{
+    "fields": {
+        "codename": "add_post",
+        "name": "Can add \u043f\u043e\u0441\u0442",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 19
+},
+{
+    "fields": {
+        "codename": "change_post",
+        "name": "Can change \u043f\u043e\u0441\u0442",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 20
+},
+{
+    "fields": {
+        "codename": "delete_post",
+        "name": "Can delete \u043f\u043e\u0441\u0442",
+        "content_type": 7
+    },
+    "model": "auth.permission",
+    "pk": 21
+},
+{
+    "fields": {
+        "codename": "add_tag",
+        "name": "Can add Tag",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 22
+},
+{
+    "fields": {
+        "codename": "change_tag",
+        "name": "Can change Tag",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 23
+},
+{
+    "fields": {
+        "codename": "delete_tag",
+        "name": "Can delete Tag",
+        "content_type": 8
+    },
+    "model": "auth.permission",
+    "pk": 24
+},
+{
+    "fields": {
+        "codename": "add_taggeditem",
+        "name": "Can add Tagged Item",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 25
+},
+{
+    "fields": {
+        "codename": "change_taggeditem",
+        "name": "Can change Tagged Item",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 26
+},
+{
+    "fields": {
+        "codename": "delete_taggeditem",
+        "name": "Can delete Tagged Item",
+        "content_type": 9
+    },
+    "model": "auth.permission",
+    "pk": 27
+},
+{
+    "fields": {
+        "codename": "add_media",
+        "name": "Can add \u043c\u0435\u0434\u0438\u044f",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 28
+},
+{
+    "fields": {
+        "codename": "change_media",
+        "name": "Can change \u043c\u0435\u0434\u0438\u044f",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 29
+},
+{
+    "fields": {
+        "codename": "delete_media",
+        "name": "Can delete \u043c\u0435\u0434\u0438\u044f",
+        "content_type": 10
+    },
+    "model": "auth.permission",
+    "pk": 30
+},
+{
+    "fields": {
+        "codename": "add_posttag",
+        "name": "Can add Tag",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 31
+},
+{
+    "fields": {
+        "codename": "change_posttag",
+        "name": "Can change Tag",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 32
+},
+{
+    "fields": {
+        "codename": "delete_posttag",
+        "name": "Can delete Tag",
+        "content_type": 11
+    },
+    "model": "auth.permission",
+    "pk": 33
+},
+{
+    "fields": {
+        "codename": "add_posttaggeditem",
+        "name": "Can add post tagged item",
+        "content_type": 12
+    },
+    "model": "auth.permission",
+    "pk": 34
+},
+{
+    "fields": {
+        "codename": "change_posttaggeditem",
+        "name": "Can change post tagged item",
+        "content_type": 12
+    },
+    "model": "auth.permission",
+    "pk": 35
+},
+{
+    "fields": {
+        "codename": "delete_posttaggeditem",
+        "name": "Can delete post tagged item",
+        "content_type": 12
+    },
+    "model": "auth.permission",
+    "pk": 36
+},
+{
+    "fields": {
+        "username": "asnelzin",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2015-09-30T13:21:19.118Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$15000$61ZkyqQmD8oa$71qHC6fV0UGgWF+H1I2HX6KaoUIklmI1P+oKfWQH6Pg=",
+        "email": "asnelzin@gmail.com",
+        "date_joined": "2015-04-06T08:48:56.597Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-08T08:08:26.481Z",
+        "object_repr": "Post object",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 1
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T09:21:35.076Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 2
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T09:21:55.398Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 3
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T09:56:24.850Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 4
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:17:14.290Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 5
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:18:21.635Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 6
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:18:45.319Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 7
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:21:06.981Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 8
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:21:20.993Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 9
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-10T10:30:32.465Z",
+        "object_repr": "Hello, World",
+        "object_id": "1",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d body \u0438 tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 10
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "action_time": "2015-04-15T07:34:51.044Z",
+        "object_repr": "***",
+        "object_id": "2",
+        "change_message": "",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 11
+},
+{
+    "fields": {
+        "action_flag": 2,
+        "action_time": "2015-04-15T08:34:09.450Z",
+        "object_repr": "***",
+        "object_id": "2",
+        "change_message": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d tags.",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 12
+},
+{
+    "fields": {
+        "action_flag": 1,
+        "action_time": "2015-04-15T14:58:40.698Z",
+        "object_repr": "test draft",
+        "object_id": "3",
+        "change_message": "",
+        "user": 1,
+        "content_type": 7
+    },
+    "model": "admin.logentry",
+    "pk": 13
+}
+]

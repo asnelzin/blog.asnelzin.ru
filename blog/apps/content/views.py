@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView
+from blog.apps.content.forms import PostForm
 
 from blog.apps.content.models import Post, PostTag
 from blog.apps.core.views import LoginRequiredMixin
@@ -49,4 +50,8 @@ class AllPostList(ListView):
 
 class CreatePost(LoginRequiredMixin, CreateView):
     model = Post
+    form_class = PostForm
     template_name = 'content/create_post.html'
+
+    def get_success_url(self):
+        return self.object.get_absolute_url()

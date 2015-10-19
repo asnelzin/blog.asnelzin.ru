@@ -226,3 +226,7 @@ a img {
     color: #333;
     background: #faedb1;
 }
+
+form .form-control {
+    font-family: "Consolas", monospace;
+}

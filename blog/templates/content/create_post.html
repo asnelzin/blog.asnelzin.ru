@@ -4,7 +4,30 @@
     <form action="" method="post">
 
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Create" />
+
+        <div class="form-group">
+            <input id="id_title" class="form-control" maxlength="700" name="title" type="text" placeholder="Title"/>
+        </div>
+        <div class="form-group">
+            <input id="id_slug" class="form-control" maxlength="70" name="slug" type="text" placeholder="Slug"/>
+        </div>
+        <div class="form-group">
+            {% if form.date.errors %}
+            <div class="alert alert-danger" role="alert">
+              <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+              <span class="sr-only">Error:</span>
+              {{ form.date.errors }}
+            </div>
+            {% endif %}
+            <input id="id_date" class="form-control" name="date" type="text" value="{% now 'd.m.Y' %}"/>
+        </div>
+        <div class="form-group">
+            <textarea cols="40" id="id_body" class="form-control" name="body" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+            <input id="id_tags" class="form-control" name="tags" type="text" placeholder="Tags"/>
+        </div>
+
+        <button type="submit" class="btn btn-default">Create</button>
     </form>
 {% endblock %}
